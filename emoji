@@ -1,0 +1,2 @@
+#!/bin/sh
+grep -v "#" /usr/local/bin/emojilist | dmenu -i -l 7 -p "Choose:" | awk '{print $1}' | tr -d '\n' | xclip -selection clipboard

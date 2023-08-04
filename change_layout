@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# this script is for changing the keyboard layout using setxkbmap
+#
+case "$(printf "English\nArabic" | dmenu -l 2 -p "Choose layout:")" in
+	"English") setxkbmap -layout us ;;
+	"Arabic") setxkbmap -layout ar ;;
+esac
