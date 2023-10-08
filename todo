@@ -1,9 +1,0 @@
-#!/bin/sh
-if [[ $1 == -e ]]
-then
-	nvim /usr/local/bin/todo.md
-	cat /usr/local/bin/todo.md
-elif [[ -z $1 ]]
-then
-	cat /usr/local/bin/todo.md
-fi
